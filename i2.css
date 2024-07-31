@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+}
+
+html {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vmin;
+}
+
+.button-option {
+    background: #ffcccb;
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 12px;
+    font-size: 14vmin;
+    color: #ff6f61;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-option:hover,
+.button-option:active {
+    transform: scale(1.1);
+    background-color: #f8d7da;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+#restart {
+    font-size: 1.5em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 2em auto 0 auto;
+    display: block;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#restart:hover {
+    transform: scale(1.05);
+    background-color: #ff4f4f;
+    color: #ffffff;
+}
+
+.popup {
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 1em;
+    font-size: 12vmin;
+}
+
+#new-game {
+    font-size: 0.7em;
+    padding: 0.5em 1em;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border-radius: 0.3em;
+    border: none;
+    text-transform: uppercase;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.popup.hide {
+    display: none;
+}
+
+#new-game:hover {
+    transform: translateY(-5px);
+    background-color: #ff4f4f;
+    color: #ffffff;
+}
+.luffy-image {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
